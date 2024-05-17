@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-      <h3 class="title">WMS仓库管理系统</h3>
+      <h3 class="title">WM仓库管理系统</h3>
       <el-form-item prop="username">
         <el-input
           v-model="loginForm.username"
@@ -49,15 +49,15 @@
           <span v-if="!loading">登 录</span>
           <span v-else>登 录 中...</span>
         </el-button>
-        <el-button
-          :loading="loading"
-          size="medium"
-          type="primary"
-          style="width:45%;"
-          @click.native.prevent="handleTry"
-        >
-          <span>获取体验账号</span>
-        </el-button>
+<!--        <el-button-->
+<!--          :loading="loading"-->
+<!--          size="medium"-->
+<!--          type="primary"-->
+<!--          style="width:45%;"-->
+<!--          @click.native.prevent="handleTry"-->
+<!--        >-->
+<!--          <span>获取体验账号</span>-->
+<!--        </el-button>-->
         <div style="float: right;" v-if="register">
           <router-link class="link-type" :to="'/register'">立即注册</router-link>
         </div>

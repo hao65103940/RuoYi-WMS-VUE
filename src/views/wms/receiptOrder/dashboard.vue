@@ -83,7 +83,7 @@
           <el-button v-hasPermi="['wms:receiptOrder:status']" :disabled="!(row.detailCount && !row.waveNo)" icon="el-icon-truck" size="mini"
                      type="text" @click.stop="handleStatus(row)">发货/入库
           </el-button>
-          <el-button icon="el-icon-print" size="mini" type="text" @click.stop="printOut(row, true)">打印</el-button>
+<!--          <el-button icon="el-icon-print" size="mini" type="text" @click.stop="printOut(row, true)">打印</el-button>-->
         </template>
       </el-table-column>
     </WmsTable>
